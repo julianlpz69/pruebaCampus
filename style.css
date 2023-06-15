@@ -1,0 +1,24 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    box-sizing: border-box !important;
+}
+
+input::-webkit-inner-spin-button{
+    display: none;
+  }
+
+#logoNavar{
+    height: 60px;
+}
+
+#imagenInicio{
+    width: 300px;
+}
+body{
+    background-color: rgb(180, 224, 255);
+}
+
+#carusel>div>img{
+    height: 500px !important;
+}
+

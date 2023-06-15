@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    
+
+    <header class="bg-info fw-bold text-black text-center fs-4">Todo lo que buscas lo encuentras aqui</header>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary container-fluid" id="navbarOpciones">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="logoNavar" src="imgs/logoNavar.png"></a>
+          <a class="navbar-brand fs-3" href="#">Campus CarWashing</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-6 justify-content-end" id="navbarNav">
+            <ul class="navbar-nav gap-5">
+                <li class="nav-item">
+                  <a class="nav-link text-white fs-4 fw-bold" id="btnInicio" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a type="submit" class="nav-link text-white fs-4 fw-bold" id="btnFuncionalidad1" href="#">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-4 fw-bold"  id="btnFuncionalidad2" href="#">Servicios</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-4 fw-bold" id="btnFuncionalidad3" href="#">Comprar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white fs-4 fw-bold" id="btnFuncionalidad4" href="#">Fidelizacion</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+<!-- --------------------------------------Pagina De Inicio---------------------------------------------------------- -->
+
+    <div id="paginaInicio">
+        <br><br>
+        <h1 class="text-black text-center">Haz Llegado a las mejores manos</h1><br><br>
+
+        <div class="container">
+            <div class="row gap-5">
+                <div class="col text-center border border-black border-5">
+                    <h2 class="border-bottom border-secondary">¿Quienes somos?</h2>
+                    <p class="fs-4 text-center">Desde el 2002, <spam class="text-danger fw-bold">Campus CarWashing</spam> es el lavadero de carros que garantiza una limpieza de manera fluida y rápida. Nuestros procesos han sido desarrollados para que las personas se demoren el menor tiempo posible lavando bien su carro.</p>
+                    <img src="imgs/inicio.png" id="imagenInicio">
+                </div>
+                <div class="col">
+                    <h2 class="border-bottom border-secondary">¿Sabes por qué sufren los carros al lavarlos?</h2>
+                    <ul class="fs-5">
+                        <li>Por lavar con poca Agua, pues el barro es arena pegada a la pintura que al refregarla la raya. Por eso en Lavafante usamos 13 litros de agua a presión por minuto.</li>
+                        <li>Por mal uso de los cepillos: El uso de cepillos de cerdas duras o sucias tiende a rayar la pintura. Por eso en Lavafante usamos peluches y trapos suaves. Los cepillos solo se deben usar para las llantas y partes bajas del carro.</li>
+                        <li>Por el uso de baldes, pues al usarlos se utiliza agua estancada con barro y mugre que se vuelve a echar en el carro.</li>
+                        <li>Por lavar bajo el sol. Especialmente los colores rojos y verdes tienden a ¨marearse¨ cuando se utiliza jabón bajo los rayos solares. En Lavafante tenemos pistas techadas para evitar que esto suceda</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div id="carouselExampleInterval" class="carousel slide border border-5 border-black" data-bs-ride="carousel">
+            <div class="carousel-inner" id="carusel">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="imgs/carruzel1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="imgs/carruzel2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="imgs/carruzel3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+
+
+
+<!-- --------------------------------------Pagina Clientes---------------------------------------------------------- -->
+
+    <div id="paginaFuncionalidad1" class="d-none">
+        
+        <section class="table-responsive border border-5 border-black text-center bg-info m-5">
+            <br>
+            <h2 class="text-black fw-bold fs-1">Lista de Datos De Los Clientes</h2>
+            <br><br>
+            <div class="row text-center">
+                <div class="col-12 col-md-6 mb-3">
+                    <button type="button" class="w-75 h-100 bg-white border rounded text-black fw-bold fs-2" data-bs-toggle="modal" data-bs-target="#formularioBuscarClientes">Buscar</button>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                    <button type="button" class="w-75 h-100 bg-white border rounded text-black fw-bold fs-2" data-bs-toggle="modal" data-bs-target="#formularioClientes">Agregar </button>
+                </div>
+            </div>
+            <br><br><br>
+            <table class="table table-dark table-striped w-100 m-auto justify-content-center">
+    
+                <thead>
+                    <tr class="fs-3 gap-5 text-center text-info justify-content-center ">
+                        <th scope="col" class="text-info">Número de<br> identificación</th>
+                        <th scope="col" class="text-info">Nombres</th>
+                        <th scope="col" class="text-info">Apellidos</th>
+                        <th scope="col" class="text-info">Placa</th>
+                        <th scope="col" class="text-info">Tipo</th>
+                        <th scope="col" class="text-info">Correo <br> electrónico</th>
+                        <th scope="col" class="text-info">Teléfono</th>
+                        <th scope="col" class="text-info">Editar</th>
+                        <th scope="col" class="text-info">Borrar</th>
+                    </tr>
+                </thead>
+                <tbody id="listaClientes" class="fs-4">
+    
+                </tbody>
+            </table>
+        </section>
+      
+
+
+
+
+
+        <!-- --------------------------------------Buscar Cliente Por ID---------------------------------------------------------- -->
+
+        <div class="modal fade" id="formularioBuscarClientes" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg rounded border border-info border-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Buscar Informacion Del Cliente</h1>
+                        <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="reset2()"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioBuscarClientes2" class="row">
+
+                            <div class="col-12 m-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Número de identificación De Cliente A Buscar</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5 " id="datoIdBuscar" placeholder="" required >
+                            </div>
+
+                            <div class="text-center col-12">
+                                <button class="fs-3 w-100 text-center btn btn-info text-white fw-bold rounded " id="btnConfirmarBuscar" type="submit">Confirmar</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="formularioClienteBuscado" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg rounded border border-info border-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion Del Cliente</h1>
+                        <button type="submit" class="btn-close" onclick="reset(formularioClienteBuscado2)" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioClienteBuscado2" class="row ">
+
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Número de identificación</label>
+                                <input readonly="readonly" type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5 " id="datoNumeroBuscado" placeholder="" required >
+                            </div>
+                                
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Nombres</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoNombresBuscado" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold justify-content-end">Apellidos</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoApellidosBuscado" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold justify-content-end">Placa</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoPlacaBuscado" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold justify-content-end">Tipo de Auto</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoTipoBuscado" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Teléfono</label>
+                                <input readonly="readonly" type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoTelefonoBuscado" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Correo Electrónico</label>
+                                <input readonly="readonly" type="email" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoCorreoBuscado" placeholder="" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="formularioClientes" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg rounded border border-success border-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion Del Cliente</h1>
+                        <button type="submit" class="btn-close" onclick="reset(formularioAgregarClientes)" data-bs-dismiss="modal" aria-label="Close" ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioAgregarClientes" class="row ">
+        
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Número de identificación</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5 " id="datoNumero" placeholder="" required >
+                            </div>
+                                
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Nombres</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoNombres" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold justify-content-end">Apellidos</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoApellidos" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Placa</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoPlaca" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Tipo Auto</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoTipo" placeholder="" required>
+                            </div>
+        
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Correo Electrónico</label>
+                                <input type="email" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoCorreo" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Telefono</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoTelefono" placeholder="" required>
+                            </div>
+        
+                            <div id="botones" class="text-center col-12">
+                                <button class="fs-3 w-100 text-center bg-success text-white fw-bold rounded border border-4" id="btnConfirmarAgregar" type="submit">Confirmar</button>
+                            </div>
+
+                            
+    
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="modal fade" id="formularioEditarClientes2" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg rounded border border-info border-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Informacion Del Cliente</h1>
+                        <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="cerrarFormulario"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioEditarClientes" class="row">
+
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Número de identificación</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5 " id="datoNumero2" placeholder="" required >
+                            </div>
+                                
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Nombres</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoNombres2" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold justify-content-end">Apellidos</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoApellidos2" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Placa</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoPlaca2" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Tipo Auto</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoTipo2" placeholder="" required>
+                            </div>
+        
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Correo Electrónico</label>
+                                <input type="email" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoCorreo2" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 m-2">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Telefono</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoTelefono2" placeholder="" required>
+                            </div>
+        
+                            <div id="botones" class="text-center col-12">
+                                <button class="fs-3 w-100 text-center bg-success text-white fw-bold rounded border border-4" id="btnConfirmarEdicion" type="submit">Confirmar</button>
+                            </div>
+
+                        </form>
+                        <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5 d-none" id="datoOculto" placeholder="" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- --------------------------------------Agregar Servicios---------------------------------------------------------- -->
+
+    <div id="paginaFuncionalidad2" class="d-none">
+
+        
+
+        <section class="table-responsive border border-5 border-black text-center bg-dark m-5">
+            <br>
+            <h2 class="text-info fw-bold fs-1">Lista de Datos De Los Servicios</h2>
+            <button type="button" class="btn col-6 min-vw-50 h-100 bg-white border rounded text-black fw-bold fs-2" data-bs-toggle="modal" data-bs-target="#formularioServicios"> Agregar </button>
+            <br><br><br>
+            <table class="table bg-info table-striped w-100 m-auto justify-content-center">
+
+                <thead>
+                    <tr class="fs-3 gap-5 text-center text-black justify-content-center ">
+                        <th scope="col" class="text-black">ID</th>
+                        <th scope="col" class="text-black">Nombre</th>
+                        <th scope="col" class="text-black">Valor</th>
+                        <th scope="col" class="text-black">Descripción</th>
+                        <th scope="col" class="text-black">Puntos para <br>Fidelización</th>
+                        <th scope="col" class="text-black">Borrar</th>
+                    </tr>
+                </thead>
+                <tbody id="listaServicios" class="fs-4">
+
+                </tbody>
+            </table>
+        </section>
+        
+
+        <div class="modal fade" id="formularioServicios" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg rounded border border-success border-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion Del Servicio</h1>
+                        <button type="submit" class="btn-close" onclick="reset3()" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioAgregarServicio" class="row ">
+        
+                                
+                            <div class="col-12 mb-5">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Nombre</label>
+                                <input type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoNombreServicio" placeholder="" required>
+                            </div>
+                                
+                           
+                            <div class="col-12 mb-5">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Valor</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoValorServicio" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 mb-5">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Puntos para Fidelización</label>
+                                <input type="number" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoPuntosServicio" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 mb-5">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Descripción</label>
+                                <br>
+                                <textarea class="w-75 h-75 form-control w-75 border border-secondary border-5" id="datoDescripcionServicio" placeholder="Descripcion del Servicio"></textarea>
+                            </div>
+        
+                            
+                            <div id="botones" class="text-center col-12">
+                                <button class="fs-3 w-100 text-center bg-success text-white fw-bold rounded border border-4" id="btnConfirmarAgregarSericio" type="submit">Confirmar</button>
+                            </div>
+
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- --------------------------------------Eliminar Cliente Por ID---------------------------------------------------------- -->
+
+    <div id="paginaFuncionalidad3" class="d-none">
+        
+        <form id="formularioClientesCompra">
+            
+            <h2 class="text-center fs-1 fw-bold m-5">Interfaz Para La Compra De Servicios</h2>
+            
+            <div class="row" id="opcionesTiquete">
+              <div class="col-6">
+                <select class="form-select form-select-lg" aria-label=".form-select-lg example" id="tablaClientesCompra">
+                  <option selected>Seleciona al cliente</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <select class="form-select form-select-lg " style="min-width: 40px;" aria-label=".form-select-lg example" id="tablaClientesComprar2" >
+                  <option selected>Selecciona el servicio</option>
+                </select>
+              </div>
+          
+              <div id="" class=" col-md col-12 mt-5 text-center">
+                <button class="fs-3 text-center bg-dark text-white fw-bold" id="btnConfirmarFactura" type="submit" >Confirmar Datos</button>
+              </div>
+            </div>
+
+          </form>
+
+          <div class="modal fade" id="facturaServicio" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg rounded border border-info border-5">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion Del Cliente</h1>
+                        <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="cerrarFormulario"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formularioClienteBuscado2" class="row ">
+    
+                            <div class="col-12 m-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Nombre Cliente</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5 " id="datoNombreFactura" placeholder="" required >
+                            </div>
+                                
+                            <div class="col-12 m-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Nombre Servicio</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoServicioFactura" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 m-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold justify-content-end">Valor de Servicio</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoValorFactura" placeholder="" required>
+                            </div>
+                                
+                            <div class="col-12 m-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Valor Con Impuestos Y Descuento</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoValor2Factura" placeholder="" required>
+                            </div>
+
+                            <div class="col-12 m-3">
+                                <label for="exampleFormControlInput1" class="form-label fs-4 fw-bold">Puntos de Fidelizacion</label>
+                                <input readonly="readonly" type="text" class="form-control w-75 border-0 border-bottom border-secondary border-5" id="datoPuntos" placeholder="" required>
+                            </div>
+    
+                            <div class="card-body text-center">
+                                <button class="fs-3 text-center bg-dark text-white fw-bold" id="btnConfirmarDatosFactura" type="submit" >Confirmar</button>
+        
+                            </div>
+                        </form>
+                        <input readonly="readonly" type="text" class="d-none form-control w-75 border-0 border-bottom border-secondary border-5" id="datoOculto" placeholder="" required>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container">
+            <div class="row gap-5">
+                <div class="col text-center">
+                    <h2 class="border-bottom text-center border-secondary fw-bold text-info">Por Cada Compra obtines Puntos de Fidelidad</h2>
+                    <br>
+                    <p class="fs-2 text-center"><span>!!!Que esta esperando¡¡¡</span> tener el auto limpio es como comer <span class="text-primary">Obligatorio</span></p>
+                    <img src="imgs/compras.png" id="imagenInicio">
+                </div>
+                <div class="col text-center border border-black border-5">
+                    <h2 class="border-bottom border-secondary fw-bold text-danger fs-1">Somos tu ayuda</h2><br>
+                    <p class="fs-4 text-center">¿Es difícil mantener mi vehículo como nuevo durante más tiempo? ¿Tengo que llevarlo a un taller de carrocería cada tanto, para que su pintura luzca una apariencia fresca? Realmente no. Con un cuidado regular puede mantener, incluso un carro muy viejo, ¡brillante y como nuevo! El secreto está en tener en cuenta los cuidados generales ya conocidos por todos, así como estos tips, que con seguridad no tenía en su radar:</p>
+                    <br><br>
+                    <p class="fs-2 text-primary text-center">Estamos Contigo</p>
+    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+<!-- --------------------------------------Eliminar Cliente Por ID---------------------------------------------------------- -->
+
+    <div id="paginaFuncionalidad4" class="d-none d-fle justify-content-center text-center">
+        <div class="container w-75">
+            <h2 class="mt-5 fs-1 fw-bold">Lista de Cliente Con Puntos de Fidelidad</h2>
+        <table class="table border border-5 mt-5 fs-4"">
+            <thead>
+              <tr>
+                <th scope="col">Clientes</th>
+                <th scope="col">Puntos de Fidelizacion</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider" id="listaFidelidad">
+        
+            </tbody>
+          </table>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="logica.js"></script>
+</body>
+</html>
